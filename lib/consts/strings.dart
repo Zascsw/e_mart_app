@@ -1,0 +1,15 @@
+const appname = "eMart";
+const appversion = "Version 1.0.0";
+const credits = "@Deleu Vlad";
+const email = "Email";
+const emailHint = "admin@admin.com";
+const password = "Password";
+const passwordhint = "******";
+const retypePassword = "Retype Password";
+const name = "Name";
+const nameHint = "Deleu Vlad";
+const forgetPass = "Forget Password";
+const login = "Log in";
+const signup = "Sign up";
+const createNewAccount = "or, create a new account";
+const loginWith = "Log in with";
