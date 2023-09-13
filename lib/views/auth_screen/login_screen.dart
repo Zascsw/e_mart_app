@@ -1,6 +1,7 @@
 import 'package:e_mart_app/consts/consts.dart';
 import 'package:e_mart_app/consts/lists.dart';
 import 'package:e_mart_app/views/auth_screen/signup_screen.dart';
+import 'package:e_mart_app/views/home_screen/home_screen.dart';
 import 'package:e_mart_app/widgets_common/applogo_widget.dart';
 import 'package:e_mart_app/widgets_common/bg_widget.dart';
 import 'package:e_mart_app/widgets_common/custom_textfield.dart';
@@ -12,6 +13,8 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String? _textController;
+    String? _passworcontroller;
     return bgWidget(
         child: Scaffold(
       resizeToAvoidBottomInset: false,
@@ -25,21 +28,24 @@ class LoginScreen extends StatelessWidget {
             10.heightBox,
             Column(
               children: [
-                customTextField(hint: emailHint, title: email),
-                customTextField(hint: passwordhint, title: password),
+                customTextField(
+                    hint: emailHint, title: email, controller: _textController),
+                customTextField(
+                    hint: passwordhint,
+                    title: password,
+                    controller: _passworcontroller),
                 Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
                         onPressed: () {}, child: forgetPass.text.make())),
                 5.heightBox,
                 ourButton(
-                        color: redColor,
-                        title: login,
-                        textColor: whiteColor,
-                        onPress: () {})
-                    .box
-                    .width(context.screenWidth - 50)
-                    .make(),
+                    color: redColor,
+                    title: login,
+                    textColor: whiteColor,
+                    onPress: () {
+                      Get.to(HomeScreen());
+                    }).box.width(context.screenWidth - 50).make(),
                 5.heightBox,
                 createNewAccount.text.color(fontGrey).make(),
                 5.heightBox,

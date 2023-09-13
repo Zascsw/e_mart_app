@@ -1,4 +1,4 @@
-const appname = "eMart";
+const appname = "Market";
 const appversion = "Version 1.0.0";
 const credits = "@Deleu Vlad";
 const email = "Email";

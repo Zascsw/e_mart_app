@@ -5,9 +5,15 @@ import 'package:e_mart_app/widgets_common/custom_textfield.dart';
 import 'package:e_mart_app/widgets_common/our_button.dart';
 import 'package:flutter/material.dart';
 
-class SignupScreen extends StatelessWidget {
+class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
 
+  @override
+  State<SignupScreen> createState() => _SignupScreenState();
+}
+
+class _SignupScreenState extends State<SignupScreen> {
+  bool isChecked = false;
   @override
   Widget build(BuildContext context) {
     return bgWidget(
@@ -31,9 +37,13 @@ class SignupScreen extends StatelessWidget {
                 Row(
                   children: [
                     Checkbox(
-                        checkColor: redColor,
-                        value: false,
-                        onChanged: (newValue) {}),
+                        activeColor: redColor,
+                        value: isChecked,
+                        onChanged: (bool? value) {
+                          setState(() {
+                            isChecked = value!;
+                          });
+                        }),
                     10.widthBox,
                     Expanded(
                         child: RichText(
@@ -68,7 +78,7 @@ class SignupScreen extends StatelessWidget {
                 ),
                 ourButton(
                         color: redColor,
-                        title: login,
+                        title: signup,
                         textColor: whiteColor,
                         onPress: () {})
                     .box
