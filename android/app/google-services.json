@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "917008473043",
-    "project_id": "emarket-b27d6",
-    "storage_bucket": "emarket-b27d6.appspot.com"
+    "project_number": "175210920287",
+    "project_id": "emarket-330bc",
+    "storage_bucket": "emarket-330bc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:917008473043:android:695a67a3359c3eae672d26",
+        "mobilesdk_app_id": "1:175210920287:android:d157e6ca0b4621d9571eea",
         "android_client_info": {
           "package_name": "com.example.e_mart_app"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCmnEqL3r5bc3N1TLNToE9RZzoeIxOZOSY"
+          "current_key": "AIzaSyDF7_BFoFQRKRkf9w2Thn_e73sSI-3-WRE"
         }
       ],
       "services": {

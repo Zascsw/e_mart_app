@@ -38,6 +38,12 @@ dependencies:
   velocity_x: ^4.1.1
   get: ^4.6.6
   http: ^1.1.0
+  firebase_core: ^2.15.1
+  cloud_firestore: ^4.9.1
+  firebase_auth: ^4.9.0
+  email_validator: ^2.1.17
+  provider: ^6.0.5
+  google_fonts: ^6.1.0
 
 dev_dependencies:
   flutter_test:

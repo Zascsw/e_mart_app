@@ -1,3 +1,4 @@
+import 'package:e_mart_app/consts/colors.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigtionbar extends StatefulWidget {
